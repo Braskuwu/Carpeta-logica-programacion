@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+
+	<h1> PROGRAMA - JUEGO DE ADIVINACIÓN </h1>	
+
+<script>
+	
+	function saltarlinea() {
+
+		document.write("<br>");
+	}	
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarlinea();
+	}
+	
+	var numerobase = Math.round(Math.random()*10);
+	var intentos = 3;
+	var numerointentos = 1;
+
+
+	while(numerointentos <= intentos){
+
+		var numeroingresado = parseInt(prompt("Ingrese un numero entre 0 y 10."));
+		if(numerobase == numeroingresado) {
+
+		alert("Usted acertó, en el intento " + numerointentos + " el numero pensado era: " + numerobase);
+		break;
+	}
+
+	else {
+		if (numerobase < numeroingresado) {
+
+			alert("usted erró, el numero pensado es mayor al numero ingresado.");
+		} else {
+
+			alert("usted erró, el numero pensado es menor al ingresado.");
+
+		}
+		
+	}
+		numerointentos++;
+		
+	}
+
+	if(numerobase == numeroingresado) {
+
+		imprimir("Usted acertó, en el intento " + numerointentos + " el numero pensado era: " + numerobase);
+		
+	}else {
+		if (numerobase < numeroingresado) {
+
+			alert("usted erró, el numero pensado es mayor al numero ingresado. el numero pensado era: " + numerobase);
+		} else {
+
+			alert("usted erró, el numero pensado es menor al ingresado. el numero pensado era: " +numerobase);
+
+		}
+	}
+	imprimir("Gracias:3");
+</script>

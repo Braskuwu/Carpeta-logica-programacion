@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+
+<h1> Una "flor" para una puta jasghdjasgd</h1>
+<h2> Se que en si solo son circulitos...</h2>
+<h3>pero teamo mucho ajsghdjas:3</h3>
+<h4>psdt: Estoy haciendo esta mierda a las 5:15 de la mañana, ya me arden los ojos de tanto estudiar):</h4>
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    pincel.fillStyle = "lightgray";
+    pincel.fillRect(0, 0, 600, 400);
+
+    function dibujarCirculo(x, y, radio, color) {
+
+        pincel.fillStyle = color;
+        pincel.beginPath();
+        pincel.arc(x, y, radio, 0, 2*3.14);
+        pincel.fill();
+    }
+
+    function dibujarflor(x,y){
+
+        dibujarCirculo (x,y,20,"red");
+        dibujarCirculo (x,y+40,20,"blue");
+        dibujarCirculo (x,y-40,20,"yellow");
+        dibujarCirculo (x+40,y,20,"black");
+        dibujarCirculo (x-40,y,20,"orange");
+
+    }
+
+    dibujarflor (300,200);
+
+</script>

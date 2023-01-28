@@ -1,0 +1,108 @@
+<meta charset="utf-8">
+HTML <br>
+Estoy definiendo la edad de Christian <br>
+<script>
+
+    function saltarlinea(){
+
+    	document.write("<br>");
+    }
+    function imprimir(frase){
+
+    	document.write(frase);
+    	saltarlinea();
+    }
+
+	var anio;
+
+	alert("La edad de Christian es ... ?");
+
+	document.write("<br> JavaScript");
+	document.write("<br> La edad de Christian es ...");
+	document.write("? <br>");
+
+	document.write("<h3>Año de nacimiento de Christian (Sin variables)</h3>");
+	document.write("El año de nacimiento de Christian es: ");
+	document.write(2020-29);
+	document.write("<br>");
+
+	document.write("<h3>Promedio y suma de edades</h3>");
+	document.write("El promedio de edad de Juan, Pedro y Carlos es: ");
+	document.write((20+25+15)/3);
+	document.write("<br> La suma de las edades de Juan, Pedro y Carlos es: " + (20+25+15));
+
+	document.write("<h3>Años de nacimiento (Sin variables)</h3>");
+	document.write("El año de nacimiento de Juan es: " + (2020 - 20));
+	document.write("<br> El año de nacimiento de Pedro es: " + (2020 - 25));
+	document.write("<br> El año de nacimiento de Carlos es: " + (2020 - 15))
+
+	document.write("<h3>Cantidad de años (Utilizando variables)</h3>");
+	anio=2020;
+	document.write("Juan tiene " + (anio-2000) + " años")
+	document.write("<br> Pedro tiene " + (anio-1995) + " años")
+	document.write("<br> Carlos tiene " + (anio-2005) + " años <br>")
+	document.write("<br>Nota: Por recomendación personal se declara la variable al inicio del codigo pero se le indican valores una vez sean necesarios en el transcurso del codigo para evitar confuciones al utilizarla.");
+
+	document.write("<br><br>");
+	document.write("Jimena tiene: " + (anio-2010) + " años.<br>");
+	document.write("Paola tiene: " + (anio-1995) + " años.<br>");
+	document.write("Laura tiene: " + (anio-2005) + " años.<br>");
+
+	var edadpaola = 25;
+	var edadjimena = 10;
+	var edadlaura = 15;
+
+	var nombre1 = "Jimena";
+	var nombre2 = "Paola";
+	var nombre3 = "Laura";
+
+	var promedio = (edadlaura+edadjimena+edadpaola)/3;
+
+	document.write("<br>El promedio de las edades de " + nombre1 + ", " + nombre2 + " y " + nombre3 + " es: " + Math.round(promedio));
+
+
+
+	document.write("<h3>Actividad</h3>");
+
+	var numuso=10;
+
+    document.write(numuso + " por 1 es " + numuso * 1 + "<br>");
+    document.write(numuso + " por 2 es " + numuso * 2 + "<br>");
+    document.write(numuso + " por 3 es " + numuso * 3 + "<br>");
+    document.write(numuso + " por 4 es " + numuso * 4 + "<br>");
+    document.write(numuso + " por 5 es " + numuso * 5 + "<br>");
+    document.write(numuso + " por 6 es " + numuso * 6 + "<br>");
+    document.write(numuso + " por 7 es " + numuso * 7 + "<br>");
+    document.write(numuso + " por 8 es " + numuso * 8 + "<br>");
+    document.write(numuso + " por 9 es " + numuso * 9 + "<br>");
+    document.write(numuso + " por 10 es " + numuso * 10 + "<br>");
+
+    document.write("<h3>Continuando con las clases</h3>");
+
+    var saltoline = "<br>";
+
+    document.write("Creando una variable para los saltos de linea podemos modificar rapidamente la distancia entre nuestras lineas modificando una sola variable.");
+    saltarlinea();
+    document.write("Asi mismo, si genero una funcion para los saltos de linea se puede modificar la cantidad de saltos durante nuestro codigo modificando una sola variable.");
+
+    saltarlinea();
+    saltarlinea();
+
+    imprimir("Hola, mundo");
+    imprimir("UwU");
+
+    // Al utilizar dos barras inclinadas se toma la linea de codigo como un comentario. Lo cual permite dejar comentarios sobre el funcionamiento del codigo sin alterar el mismo.
+
+    var edadb = 20;
+    var edada = 20;
+    var difedad = 20 - 20;
+
+    imprimir("<h3>Actividad</h3>");
+    imprimir("Nuestra Diferencia de edad es: " + difedad + ".");
+
+    document.write("<h3>Continuando con las clases</h3>");
+
+    
+
+
+	</script>
